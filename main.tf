@@ -1,4 +1,5 @@
 #terraform code to start our instances
+#Video changes
 provider "aws" {
   region = "us-east-1" # Change this to your preferred region
 }
@@ -26,8 +27,8 @@ resource "aws_instance" "app_server" {
 }
 
 resource "aws_key_pair" "clo835_key_pair" {
-  key_name   = "clo835_key_pair"             # Name of the key pair in AWS
-  public_key = file("~/.ssh/clo835_nick.pub") # Path to the public key file
+  key_name   = "assignment_nick"             # Name of the key pair in AWS
+  public_key = file("~/.ssh/assignment_nick.pub") # Path to the public key file
 }
 
 
