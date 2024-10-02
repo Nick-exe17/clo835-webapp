@@ -1,5 +1,6 @@
 #terraform code to start our instances
 #Video changes
+#video changes 1
 provider "aws" {
   region = "us-east-1" # Change this to your preferred region
 }
